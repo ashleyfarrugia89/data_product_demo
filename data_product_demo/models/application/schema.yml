@@ -1,0 +1,8 @@
+
+version: 2
+
+models:
+  - name: yoy_sales_growth
+    description: "Provides insight into year on year sales growth across channel, category and class"
+    config:
+      tags: ["yoy_sales_growth"]

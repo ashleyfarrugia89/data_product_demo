@@ -1,0 +1,36 @@
+
+version: 2
+
+models:
+  - name: product
+    description: "The central entity representing an individual item for sale (e.g., a t-shirt, a pair of trainers, a handbag)."
+    columns:
+      - name: i_item_sk
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+    config:
+      tags: ["product"]
+
+  - name: sales
+    description: "Represents a customer's request to purchase one or more products."
+    columns:
+      - name: ss_ticket_number
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+    config:
+      tags: ["sales"]
+
+  - name: calendar
+    description: "Represents the calendar dates for the sales data"
+    columns:
+      - name: d_date_sk
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+    config:
+      tags: ["calendar"]

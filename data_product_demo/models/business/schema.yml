@@ -1,0 +1,8 @@
+
+version: 2
+
+models:
+  - name: product_growth
+    description: "Provides a granular view of product sales. It enables users to analyze sales trends, identify top and bottom-performing products, and understand the drivers of product-level revenue."
+    config:
+      tags: ["product_growth"]
